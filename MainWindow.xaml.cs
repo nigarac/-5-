@@ -24,5 +24,10 @@ namespace Constructors_Сизов
         {
             InitializeComponent();
         }
+
+        private void ScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        {
+
+        }
     }
 }
