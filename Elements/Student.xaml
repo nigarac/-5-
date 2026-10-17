@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="Constructors_Сизов.Elements.Student"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Constructors_Сизов.Elements"
+             mc:Ignorable="d">
+    <Grid Height="50" Margin="0,0,0,10" Background="#35363A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.Effect>
+            <DropShadowEffect 
+                Color="Black"
+                Opacity="0.7"
+                Direction="315"
+                RenderingBias="Performance"
+                BlurRadius="5"/>
+        </Grid.Effect>
+        <Image 
+            Height="30" 
+            Width="30" 
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="10"
+            Stretch="UniformToFill"
+            Source="/Images/ic_user.png">
+            
+        </Image>
+        <Label
+            x:Name="tbFIO"
+            Content="Фамилия Имя Отчество"
+            VerticalContentAlignment="Center"
+            Margin="10"
+            Grid.Column="1"
+            Foreground="White"
+            FontSize="14"/>
+        <Label
+            x:Name="tbScholarship"
+            Content="Степендия: получает"
+            VerticalContentAlignment="Center"
+            Margin="10"
+            Grid.Column="2"
+            Foreground="White"
+            FontSize="14"/>
+        <Label
+            x:Name="tbCourse"
+            Content="Курс: 4"
+            VerticalContentAlignment="Center"
+            Margin="10"
+            Grid.Column="3"
+            Foreground="White"
+            FontSize="14"/>
+
+
+    </Grid>                
+</UserControl>             
+                           
