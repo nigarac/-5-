@@ -43,5 +43,10 @@ namespace Constructors_Сизов
                 CreateStudent();
             }
         }
+
+        private void ДобавитьЧеловека(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

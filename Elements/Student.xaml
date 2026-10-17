@@ -21,7 +21,8 @@
                 RenderingBias="Performance"
                 BlurRadius="5"/>
         </Grid.Effect>
-        <Image 
+        <Image
+            x:Name="UserPhoto"
             Height="30" 
             Width="30" 
             VerticalAlignment="Top"

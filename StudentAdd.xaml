@@ -1,0 +1,33 @@
+﻿<Window x:Class="Constructors_Сизов.StudentAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Constructors_Сизов"
+        mc:Ignorable="d"
+        Title="StudentAdd" Height="209" Width="1630">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="67*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox Margin="80,26,158,29" TextWrapping="Wrap" Grid.Row="1" Text="/Images/2.png" Name="sourceTextBox"/>
+        <TextBox Margin="62,28,63,27" TextWrapping="Wrap" Grid.Row="1" Grid.Column="1" Text="Сизов Дмитрий Владимирович" Name="FIOTextBox"/>
+        <TextBox Margin="75,28,80,27" TextWrapping="Wrap" Grid.Row="1" Grid.Column="2" RenderTransformOrigin="0.5,0.5" Text="Да" Name="MoneyTextBox"/>
+
+        <TextBox Margin="92,28,106,27" TextWrapping="Wrap" Grid.Row="1" Grid.Column="3" Text="3" Name="courceTextBox"/>
+        <Label Content="Путь к фото" Margin="80,0,124,0"/>
+        <Label Content="ФИО" Margin="62,-1,142,1" Grid.Column="1"/>
+        <Label Content="Стипендия: да или нет" Margin="78,0,124,0" Grid.Column="2"/>
+        <Label Content="курс" Margin="92,0,110,0" Grid.Column="3"/>
+        <Button Grid.Column="2" Content="Записать" Margin="33,10,38,10" Grid.Row="2" Click="buttonStudentAdd"/>
+
+    </Grid>
+</Window>
