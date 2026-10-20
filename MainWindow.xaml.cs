@@ -46,7 +46,13 @@ namespace Constructors_Сизов
 
         private void ДобавитьЧеловека(object sender, RoutedEventArgs e)
         {
+            StudentAdd addWindow = new StudentAdd(AllStudents);
+            addWindow.ShowDialog();
 
+            
+            parent.Children.Clear(); 
+            Step = 0;
+            CreateStudent();
         }
     }
 }
